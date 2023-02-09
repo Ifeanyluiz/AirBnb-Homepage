@@ -1,0 +1,316 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input:focus {
+    outline: none;
+}
+
+#announcement {
+    background: #f7f7f7;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e8e8e8;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+}
+
+#announcement-link {
+    color: #222222;
+    text-decoration: underline;
+}
+
+#header {
+    display: flex;
+    background: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+#logo {
+    height: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#header-search {
+    background: url("images/search.png") no-repeat scroll 7px 7px;
+    background-position: right;
+    margin-left: 170px;
+    padding: 15px 0 15px 20px;
+    border: 1px solid rgb(218, 211, 211);
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 2px 2px 0 rgb(218, 211, 211);
+    cursor: pointer;
+}
+
+#header-search:hover {
+    box-shadow: 0 4px 4px 0 rgb(218, 211, 211);
+}
+
+#header-search::placeholder {
+    color: #222222;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    
+}
+
+#right-header {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: #222222;
+}
+
+#globe-img {
+    height: 20px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#header-btn {
+    background-color: transparent;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 20px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#header-btn:hover {
+    background-color: #f0f0f0;
+}
+
+#globe-img:hover {
+    background: #f0f0f0;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#navbar-btn {
+    padding: 20px;
+    border: 1px solid rgb(218, 211, 211);
+    background: url("images/menu.png") no-repeat left, url("images/user.png") no-repeat right;
+    background-size: 20px;
+    border-radius: 30px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#navbar-btn:hover {
+    box-shadow: 0 2px 4px 0 rgb(218, 211, 211);
+    cursor: pointer;
+}
+
+#category-section {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.category-header {
+    cursor: pointer;
+}
+
+#active-category {
+    border-bottom: 2px solid #000000;
+}
+
+#selected-category {
+    font-weight: bold;
+}
+
+.inactive-category:hover {
+    font-weight: bold;
+    border-bottom: 2px solid rgb(218, 211, 211);
+}
+
+.category-icon {
+    height: 20px;
+    display: block;
+    width: 20px;
+    margin: 0 auto;
+}
+
+#see-more-icon {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+#see-more-icon:hover {
+    box-shadow: -2px 4px 8px 5px rgb(218, 211, 211);
+    border-radius: 50%;
+}
+
+#filter-btn {
+    padding: 15px 15px 15px 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(218, 211, 211);
+    background-color: #ffffff;
+    background: url("images/filter-icon-removebg-preview.png") no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+    background-size: 27px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#main-section {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    line-height: 150%;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-evenly;
+}
+
+.apartment-img {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.star-img {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.apartment-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartment-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apartment-info {
+    margin-top: -10px;
+}
+
+.date-text {
+    margin-top: -10px;
+}
+
+#footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebe8e8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 48px;
+}
+
+#footer-resources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 48px;
+}
+
+#footer-globe-img {
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#up-img {
+    height: 20px;
+    cursor: pointer;
+}
+
+.link {
+    margin-left: 5px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+#select-language {
+    margin-right: 20px;
+}
+
+#dollar {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#currency {
+    margin-right: 20px;
+}
+
+#resources-link {
+    margin-right: 5px;
+}
+
+#map-section {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    margin-top: 200px;
+}
+
+#map-btn {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background: url("images/map.png"), #222;
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    background-size: 20px;
+    color: #ffffff;
+    width: 120px;
+    height: 3em;
+    padding-right: 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+#map-btn:hover {
+    box-shadow: 0 4px 8px 3px #ebe8e8;
+}
